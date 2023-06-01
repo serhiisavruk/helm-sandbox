@@ -39,7 +39,6 @@ jobs:
         run: ct install --all --chart-dirs charts
 
       - name: Cleanup
-        uses: actions/checkout@v3
         if: always()
         run: kind delete cluster
 
